@@ -1,3 +1,4 @@
-FROM httpd:2.4
-COPY ./B09NavbarsDemo.html /usr/local/apache2/htdocs/
+FROM nginx
+
+COPY dist/myapp/ /usr/share/nginx/html/
 expose 80
